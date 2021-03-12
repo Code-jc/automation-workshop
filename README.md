@@ -1,2 +1,2 @@
-# automation-workshop
-TestCafe Automation Workshop by Wizeline
+# automation-workshop 
+TestCafe Automation Workshop by Wizeline - Part 1
