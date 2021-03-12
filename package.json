@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Code-jc/automation-workshop/issues"
   },
-  "homepage": "https://github.com/Code-jc/automation-workshop#readme"
+  "homepage": "https://github.com/Code-jc/automation-workshop#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }

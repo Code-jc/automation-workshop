@@ -1,10 +1,9 @@
-import {selector} from 'testcafe'
+import { Selector } from 'testcafe';
 
 class WelcomePage {
-    constructor(){
-        this.loginButton = Selector ('.btn.btn-lg');  
-    }
-
+   constructor() {
+      this.loginButton = Selector('.btn.btn-lg');
+   }
 }
 
 export default new WelcomePage();
