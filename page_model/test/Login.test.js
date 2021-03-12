@@ -2,16 +2,19 @@ import WelcomePage from '../pages/WelcomePage';
 import LoginPage from '../pages/LoginPage';
 import MyNotesPage from '../pages/MyNotesPage';
 import { CREDENTIALS } from '../data/Constants';
-fixture("login fixture testing").page `http://testapp.galenframework.com`
+
+
+fixture('login fixture testing')
+  .page `http://testapp.galenframework.com`
   .beforeEach(async t => {
     await t.click(welcomePage.loginButton)
   })
 
-test("Users can login using valid credential", async t => {
+test("Users can login using valid credentials", async t => {
   await t
     .click(WelcomePage.loginButton)
-    .typeText(LoginPage.userNameField, CREDENTIALS.VALID_USER.USERNAME)
-    .typeText(LoginPage.passwordField, '')
+    .typeText(LoginPage.userNameField, CREDENTIALS.VALID_USER.USERNAME, {paste:true})
+    .typeText(LoginPage.passwordField, CREDENTIALS.VALID_USER.PASSWORD, {paste:true})
     .click(LoginPage.loginButton);
 
   await t.expect(MyNotesPage.pageTitle.exists).ok();

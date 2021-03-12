@@ -1,7 +1,7 @@
 {
   "name": "testcafe-workshop",
   "version": "1.0.0",
-  "description": "TestCafe workshop by wizeline",
+  "description": "TestCafe workshop by Wizeline",
   "main": "index.js",
   "scripts": {
     "test-all-chrome": "testcafe chrome ./page_model/tests",

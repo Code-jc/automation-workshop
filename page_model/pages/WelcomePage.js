@@ -2,7 +2,7 @@ import {selector} from 'testcafe'
 
 class WelcomePage {
     constructor(){
-        this.loginButton = selector ('.btn.btn-lg');
+        this.loginButton = Selector ('.btn.btn-lg');  
     }
 
 }

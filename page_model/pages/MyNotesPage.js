@@ -2,10 +2,10 @@ import { Selector } from "testcafe";
 
 class MyNotesPage {
   constructor() {
-    this.pageTitle = Selector("");
-    this.addNoteItemButton = Selector("");
-    this.noteItem = Selector("");
-    this.addNoteButton = Selector("");
+    this.pageTitle = Selector('');
+    this.addNoteItemButton = Selector('');
+    this.noteItem = Selector('');
+    this.addNoteButton = Selector('');
   }
 }
 
